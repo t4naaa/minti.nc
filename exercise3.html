@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Durvuljin</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .durvuljin {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            transition: all 0.3s ease; /* Smooth transition effect */
+        }
+
+        /* When the screen width is 600px or less */
+        @media (max-width: 600px) {
+            .rectangle {
+                width: 80%; /* Width adjusts to 80% of the screen width */
+                height: auto; /* Auto-adjust height to maintain aspect ratio */
+                max-width: 300px; /* Ensures the maximum width is still 300px */
+            }
+        }
+
+        /* When the screen width is 400px or less */
+        @media (max-width: 400px) {
+            .durvuljin {
+                width: 90%; /* Width adjusts to 90% of the screen width */
+                height: auto;
+                max-width: 250px; /* Maximum width is set to 250px */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="durvuljin"></div> <!-- The red durvuljin -->
+
+</body>
+</html>
+
